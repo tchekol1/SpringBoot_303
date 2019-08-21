@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/add"> Show all todo lists </a>
+    Due date:  <p th:text="${todo_2.duedate}" ></p>
+    Task Name: <p th:text="${todo_2.Task_Name}" ></p>
+    Priority:  <p th:text="${todo_2.priority}"></p>
+
+<a th:href="@/delete/{id}(id=${todo_2.id})}">Delete this course</a>
+
+</body>
+</html>
